@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 72" width="100%" height="100%">
+  <defs>
+    <!-- Dark Mode Thermal Flame Gradient -->
+    <linearGradient id="ambaFlameDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6E40" />
+      <stop offset="100%" stop-color="#FF3D00" />
+    </linearGradient>
+    <!-- Dark Mode Ice-Steel Gradient -->
+    <linearGradient id="ambaSteelDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+  </defs>
+
+  <!-- The Authentic 1992 Dual Energy/Piping Stream Emblem (Dark Background Optimized) -->
+  <g id="emblemDark" transform="translate(6, 12)">
+    <!-- Upper Stream (Flame Energy Flow) -->
+    <path 
+      d="M 2 24 L 46 24 L 68 3 L 78 3 L 53 32 L 2 32 Z" 
+      fill="url(#ambaFlameDark)" 
+    />
+    <!-- Lower Stream (Steel Engineering Band) -->
+    <path 
+      d="M 2 40 L 46 40 L 68 19 L 78 19 L 53 48 L 2 48 Z" 
+      fill="url(#ambaSteelDark)" 
+    />
+  </g>
+
+  <!-- Typography: Amba Enterprises (White & Crisp for Dark Footers) -->
+  <g transform="translate(98, 41)">
+    <!-- Primary Brand Wordmark -->
+    <text 
+      x="0" 
+      y="0" 
+      font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+      font-size="29" 
+      font-weight="800" 
+      fill="#FFFFFF" 
+      letter-spacing="-0.02em"
+    >AMBA<tspan dx="8" font-weight="600" fill="#E2E8F0">ENTERPRISES</tspan></text>
+
+    <!-- Subtitle Tagline -->
+    <text 
+      x="2" 
+      y="18" 
+      font-family="'JetBrains Mono', 'Inter', monospace" 
+      font-size="8.5" 
+      font-weight="600" 
+      fill="#FF8A65" 
+      letter-spacing="0.14em"
+    >THERMAL &amp; COMBUSTION ENGINEERS • EST. 1992</text>
+  </g>
+</svg>

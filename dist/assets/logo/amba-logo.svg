@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 72" width="100%" height="100%">
+  <defs>
+    <!-- Modern Thermal Gradient: Combustion Flame -->
+    <linearGradient id="ambaFlame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5722" />
+      <stop offset="100%" stop-color="#E64A19" />
+    </linearGradient>
+    <!-- Deep Industrial Marine Navy Gradient -->
+    <linearGradient id="ambaNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#152466" />
+      <stop offset="100%" stop-color="#20317F" />
+    </linearGradient>
+  </defs>
+
+  <!-- The Authentic 1992 Dual Energy/Piping Stream Emblem (Refined Vector Geometry) -->
+  <g id="emblem" transform="translate(6, 12)">
+    <!-- Upper Stream (Flame Energy Flow) -->
+    <path 
+      d="M 2 24 L 46 24 L 68 3 L 78 3 L 53 32 L 2 32 Z" 
+      fill="url(#ambaFlame)" 
+    />
+    <!-- Lower Stream (Heavy Industrial Infrastructure) -->
+    <path 
+      d="M 2 40 L 46 40 L 68 19 L 78 19 L 53 48 L 2 48 Z" 
+      fill="url(#ambaNavy)" 
+    />
+  </g>
+
+  <!-- Typography: Amba Enterprises -->
+  <g transform="translate(98, 41)">
+    <!-- Primary Brand Wordmark -->
+    <text 
+      x="0" 
+      y="0" 
+      font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+      font-size="29" 
+      font-weight="800" 
+      fill="#1A2B6B" 
+      letter-spacing="-0.02em"
+    >AMBA<tspan dx="8" font-weight="600" fill="#0F172A">ENTERPRISES</tspan></text>
+
+    <!-- Subtitle Tagline -->
+    <text 
+      x="2" 
+      y="18" 
+      font-family="'JetBrains Mono', 'Inter', monospace" 
+      font-size="8.5" 
+      font-weight="600" 
+      fill="#64748B" 
+      letter-spacing="0.14em"
+    >THERMAL &amp; COMBUSTION ENGINEERS • EST. 1992</text>
+  </g>
+</svg>
