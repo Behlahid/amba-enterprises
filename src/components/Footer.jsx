@@ -15,21 +15,15 @@ export default function Footer({ onOpenRfq }) {
         }}>
           {/* Brand & Legacy Column */}
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-              <img 
-                src="/assets/logo/logo.png" 
-                alt="Amba Enterprises Logo" 
-                style={{ height: '48px', objectFit: 'contain' }}
-                onError={(e) => { e.target.src = '/assets/logo/Amba-Logo.jpg'; }}
-              />
-              <div>
-                <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-white)', fontFamily: 'var(--font-display)', lineHeight: 1.1 }}>
-                  AMBA ENTERPRISES
-                </div>
-                <div style={{ fontSize: '0.6875rem', color: 'var(--color-secondary)', fontFamily: 'var(--font-mono)', textTransform: 'uppercase' }}>
-                  Combustion & Thermal Engineers
-                </div>
-              </div>
+            <div style={{ marginBottom: '1.25rem' }}>
+              <Link to="/" style={{ display: 'inline-block', textDecoration: 'none' }}>
+                <img 
+                  src="/assets/logo/amba-logo-dark.svg" 
+                  alt="Amba Enterprises" 
+                  style={{ height: '46px', width: 'auto', display: 'block' }}
+                  onError={(e) => { e.target.src = '/assets/logo/amba-logo.svg'; }}
+                />
+              </Link>
             </div>
 
             <p style={{ fontSize: '0.875rem', lineHeight: 1.6, marginBottom: '1.25rem', color: '#94A3B8' }}>

@@ -57,7 +57,12 @@ export default function RFQModal({ isOpen, onClose, initialEquipment = '' }) {
 
         {!submitted ? (
           <>
-            <div style={{ marginBottom: '1.5rem' }}>
+            <div style={{ marginBottom: '1.25rem' }}>
+              <img 
+                src="/assets/logo/amba-logo.svg" 
+                alt="Amba Enterprises" 
+                style={{ height: '34px', width: 'auto', marginBottom: '0.75rem', display: 'block' }} 
+              />
               <span className="badge badge-secondary" style={{ marginBottom: '0.375rem' }}>
                 REQUEST FOR ENGINEERING QUOTATION (RFQ)
               </span>

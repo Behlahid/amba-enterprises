@@ -100,7 +100,7 @@ export default function Navbar({ onOpenRfq }) {
                 display: 'block'
               }}
               onError={(e) => { 
-                e.target.src = '/assets/logo/Web-amba-Logo.fw.png'; 
+                e.target.src = '/assets/logo/amba-logo-classic.svg'; 
               }} 
             />
           </Link>
@@ -432,6 +432,13 @@ export default function Navbar({ onOpenRfq }) {
             gap: '1rem',
             boxShadow: '0 10px 25px rgba(0,0,0,0.1)'
           }}>
+            <div style={{ paddingBottom: '0.75rem', borderBottom: '1px solid var(--color-border)' }}>
+              <img 
+                src="/assets/logo/amba-logo.svg" 
+                alt="Amba Enterprises" 
+                style={{ height: '38px', width: 'auto', display: 'block' }} 
+              />
+            </div>
             <Link to="/" onClick={() => setMobileMenuOpen(false)} style={{ fontWeight: 600, textDecoration: 'none', color: 'var(--color-graphite)' }}>Home</Link>
             <div style={{ fontWeight: 700, color: 'var(--color-primary)', borderBottom: '1px solid var(--color-border)', paddingBottom: '0.375rem' }}>
               Products & Machinery:
