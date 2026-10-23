@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { COMPANY_INFO, PRODUCT_CATEGORIES } from '../data/websiteData';
-import { Download, ShieldCheck, MapPin, Phone, Mail } from 'lucide-react';
+import { Download, MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
 
-export default function Footer({ onOpenRfq, onSelectCategory }) {
+export default function Footer({ onOpenRfq }) {
   return (
     <footer style={{ backgroundColor: '#0A0F1D', color: '#94A3B8', paddingTop: '4.5rem', paddingBottom: '2.5rem', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
       <div className="container">
@@ -26,7 +27,7 @@ export default function Footer({ onOpenRfq, onSelectCategory }) {
                   AMBA ENTERPRISES
                 </div>
                 <div style={{ fontSize: '0.6875rem', color: 'var(--color-secondary)', fontFamily: 'var(--font-mono)', textTransform: 'uppercase' }}>
-                  Thermal Combustion Engineers
+                  Combustion & Thermal Engineers
                 </div>
               </div>
             </div>
@@ -37,44 +38,39 @@ export default function Footer({ onOpenRfq, onSelectCategory }) {
 
             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
               <span className="badge badge-dark" style={{ fontSize: '0.6875rem' }}>ISO 9001:2015</span>
-              <span className="badge badge-dark" style={{ fontSize: '0.6875rem' }}>IBR Certified</span>
-              <span className="badge badge-dark" style={{ fontSize: '0.6875rem' }}>BVQI Approved</span>
+              <span className="badge badge-dark" style={{ fontSize: '0.6875rem' }}>IBR 1950 Certified</span>
+              <span className="badge badge-dark" style={{ fontSize: '0.6875rem' }}>BVQI & DVGW Approved</span>
             </div>
           </div>
 
-          {/* Equipment Lines */}
+          {/* Machinery Navigation Links */}
           <div>
             <h4 style={{ color: 'var(--color-white)', fontSize: '1rem', marginBottom: '1.25rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-              Equipment Lines
+              Machinery & Equipment
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.625rem', fontSize: '0.875rem' }}>
-              {PRODUCT_CATEGORIES.map((p) => (
-                <li key={p.id}>
-                  <a 
-                    href="#products" 
-                    onClick={() => onSelectCategory(p.id)}
-                    style={{ color: '#CBD5E1', transition: 'color 0.15s ease' }}
-                    onMouseOver={(e) => e.target.style.color = 'var(--color-secondary)'}
-                    onMouseOut={(e) => e.target.style.color = '#CBD5E1'}
-                  >
-                    {p.name}
-                  </a>
-                </li>
-              ))}
               <li>
-                <a 
-                  href="#energy" 
-                  style={{ color: '#CBD5E1' }}
-                  onMouseOver={(e) => e.target.style.color = 'var(--color-secondary)'}
-                  onMouseOut={(e) => e.target.style.color = '#CBD5E1'}
-                >
-                  Digital Combustion Retrofits
-                </a>
+                <Link to="/products/burners" style={{ color: '#CBD5E1' }}>• Industrial Burners (15 kW - 25 MW)</Link>
+              </li>
+              <li>
+                <Link to="/products/boilers" style={{ color: '#CBD5E1' }}>• Steam Boilers (IBR & Non-IBR)</Link>
+              </li>
+              <li>
+                <Link to="/products/thermic-fluid" style={{ color: '#CBD5E1' }}>• Thermic Fluid Heaters (Up to 300°C)</Link>
+              </li>
+              <li>
+                <Link to="/products/hot-air-water" style={{ color: '#CBD5E1' }}>• Hot Air & Water Generators</Link>
+              </li>
+              <li>
+                <Link to="/products/spare-parts" style={{ color: '#CBD5E1' }}>• Genuine Spares & HP Technik Pumps</Link>
+              </li>
+              <li>
+                <Link to="/energy-conservation" style={{ color: 'var(--color-secondary)', fontWeight: 600 }}>• Fuel Savings & Combustion Hub</Link>
               </li>
             </ul>
           </div>
 
-          {/* Technical Literature Downloads */}
+          {/* Certified PDF Catalogs */}
           <div>
             <h4 style={{ color: 'var(--color-white)', fontSize: '1rem', marginBottom: '1.25rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
               Technical Catalogs (PDF)
@@ -108,7 +104,7 @@ export default function Footer({ onOpenRfq, onSelectCategory }) {
             </ul>
           </div>
 
-          {/* Mumbai Registered Office */}
+          {/* Mumbai Registered Office & Action */}
           <div>
             <h4 style={{ color: 'var(--color-white)', fontSize: '1rem', marginBottom: '1.25rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
               Head Office Contact
@@ -149,7 +145,7 @@ export default function Footer({ onOpenRfq, onSelectCategory }) {
           fontSize: '0.8125rem'
         }}>
           <div>
-            © 1992 - 2026 <strong>Amba Enterprises</strong>. All rights reserved. Registered under Indian Boiler Regulations (IBR).
+            © 1992 - 2026 <strong>Amba Enterprises</strong>. All rights reserved. Registered under Indian Boiler Regulations (IBR 1950).
           </div>
           <div style={{ display: 'flex', gap: '1.5rem' }}>
             <span>Mumbai Technical Works</span>
