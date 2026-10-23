@@ -88,10 +88,10 @@ export default function Navbar({ onOpenRfq }) {
         position: 'relative'
       }}>
         <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '76px' }}>
-          {/* Official Brand Logo */}
+          {/* Official Brand Logo (Modern Vector SVG) */}
           <Link to="/" onClick={() => setMegaMenuOpen(false)} style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
             <img 
-              src="/assets/logo/Web-amba-Logo.fw.png" 
+              src="/assets/logo/amba-logo.svg" 
               alt="Amba Enterprises" 
               style={{ 
                 height: '46px', 
@@ -100,7 +100,7 @@ export default function Navbar({ onOpenRfq }) {
                 display: 'block'
               }}
               onError={(e) => { 
-                e.target.src = '/assets/logo/logo.png'; 
+                e.target.src = '/assets/logo/Web-amba-Logo.fw.png'; 
               }} 
             />
           </Link>
