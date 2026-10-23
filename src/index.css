@@ -394,7 +394,7 @@ button, input, select, textarea {
   list-style: none;
 }
 
-.nav-link {
+.nav-link, .nav-item {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 0.9375rem;
@@ -403,13 +403,17 @@ button, input, select, textarea {
   position: relative;
   transition: color var(--transition-fast);
   cursor: pointer;
+  white-space: nowrap;
+  display: inline-block;
+  text-decoration: none;
 }
 
-.nav-link:hover, .nav-link.active {
-  color: var(--color-primary);
+.nav-link:hover, .nav-link.active,
+.nav-item:hover, .nav-item.active {
+  color: var(--color-primary) !important;
 }
 
-.nav-link::after {
+.nav-link::after, .nav-item::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -420,7 +424,8 @@ button, input, select, textarea {
   transition: width var(--transition-fast);
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after, .nav-link.active::after,
+.nav-item:hover::after, .nav-item.active::after {
   width: 100%;
 }
 
